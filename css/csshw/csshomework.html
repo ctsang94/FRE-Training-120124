@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                background-color: black;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .dialog {
+                display: flex;
+                border: 2px solid gray;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                height: 95px;
+                width: 450px;
+                border-radius: 15px;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 115%);
+            }
+            .dialog-img-item1 {
+                height: 100%;
+                width: auto;
+                margin-left: 10px;
+            }
+            .dialog-img-item2 {
+                height: 70%;
+                width: auto;
+                margin-right: 10px;
+            }
+
+            .dialog-text {
+                width: 57%;
+            }
+            .dialog-text-item1 {
+                color: white;
+                margin-bottom: 5px;
+            }
+            .dialog-text-item2 {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="container">
+            <div class="backgroundimg">
+                <img
+                    src="./backgroundimg.jpg"
+                    alt=""
+                    class="backgroundimg-item"
+                />
+            </div>
+            <div class="dialog">
+                <img src="./picindialog.png" alt="" class="dialog-img-item1" />
+                <div class="dialog-text">
+                    <div class="dialog-text-item1">Stranger Things</div>
+                    <div class="dialog-text-item2">Downloading...</div>
+                </div>
+                <img src="./gifindialog.gif" alt="" class="dialog-img-item2" />
+            </div>
+        </main>
+    </body>
+</html>
